@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  font-size: 50px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.subheader {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.category-list img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.post-list li {
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  padding: 10px;
+  cursor: pointer;
+}
+
+.post-list img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.my-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.my-modal {
+  position: absolute;
+  top: 40px;
+  left: 200px;
+  right: 200px;
+  bottom: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,.24), 0 3px 12px 0 rgba(0,0,0,.12);
+  min-width: 500px;
+}
