@@ -24,7 +24,11 @@ class AddPost extends Component {
         this.currentPost.body = '';
         this.currentPost.title = '';
         this.currentPost.author = '';
-        this.currentPost.category = this.props.category;
+
+        //assign the category to the new post.
+        //If the category is passed as props, assign that category.
+        //Else assign the first category from the props.categories list
+        this.currentPost.category = this.props.category || this.props.categories[0].name;
 
         //state will hold the post fields, as it gets edited.
         this.state = {
