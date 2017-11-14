@@ -22,10 +22,10 @@ function App(props) {
 			<Route exact path="/" render={({history}) => (
 				<Categories/>
 			)}/>
-			<Route exact path="/category/:id" render={({match}) => {
+			<Route exact path="/:id" render={({match}) => {
 				return (<Category category={match.params.id}/>)
 			}}/>
-			<Route path="/category/:category/post/:id" render={({match}) => {
+			<Route path="/:category/:id" render={({match}) => {
 				return (
 					<Post postId={match.params.id}/>
 				)

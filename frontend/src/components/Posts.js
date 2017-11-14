@@ -130,7 +130,7 @@ class Posts extends Component {
                                         <FaExpand
                                             size={20}
                                             className="ml-1 cursorPointer"
-                                            onClick={ () => history.push(`/category/${post.category}/post/${post.id}`) }
+                                            onClick={ () => history.push(`/${post.category}/${post.id}`) }
                                         />
                                         <MdDelete size={20} className="ml-1 cursorPointer" onClick={() => this.deletePost(post.id)}/>
                                     </div>

@@ -23,7 +23,7 @@ function Categories(props) {
                             <div
                                 key={category.name}
                                 className="card cursorPointer"
-                                onClick={ () => props.history.push(`/category/${category.name}`)}
+                                onClick={ () => props.history.push(`/${category.name}`)}
                             >
                                 <img className="card-img-top" src={src} alt={category.name}/>
                                 <div className="card-body">
