@@ -11,7 +11,7 @@ import {
 	COMMENT_DELETED,
 	COMMENT_ADDED,
 	COMMENT_UPDATED
-} from '../actions'
+} from '../actions/actionTypes'
 
 /**
 **	Sets the categories in redux store.

@@ -1,14 +1,16 @@
-export const RECEIVE_CATEGORIES = 'RECEIVE_CATEGORIES';
-export const RECEIVE_POSTS = 'RECEIVE_POSTS';
-export const RECEIVE_COMMENTS = 'RECEIVE_COMMENTS';
-export const UPDATE_VOTE_POST = 'UPDATE_VOTE_POST';
-export const POST_DELETED = 'POST_DELETED';
-export const POST_ADDED = 'POST_ADDED';
-export const POST_UPDATED = 'POST_UPDATED';
-export const UPDATE_VOTE_COMMENT = 'UPDATE_VOTE_COMMENT';
-export const COMMENT_DELETED = 'COMMENT_DELETED';
-export const COMMENT_ADDED = 'COMMENT_ADDED';
-export const COMMENT_UPDATED = 'COMMENT_UPDATED';
+import {
+    RECEIVE_CATEGORIES,
+    RECEIVE_POSTS,
+    RECEIVE_COMMENTS,
+    UPDATE_VOTE_POST,
+    POST_DELETED,
+    POST_ADDED,
+    POST_UPDATED,
+    UPDATE_VOTE_COMMENT,
+    COMMENT_DELETED,
+    COMMENT_ADDED,
+    COMMENT_UPDATED
+} from './actionTypes'
 
 export function receiveCategories(categories) {
     return {
