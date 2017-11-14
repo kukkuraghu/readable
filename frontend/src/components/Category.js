@@ -15,6 +15,12 @@ function Category(props) {
     //get the category detail
     const category = props.categories.find(category => category.name === categoryId);
 
+    //if there is not category found, don't render the main page. render a temp <div>.
+    //This is useful when the user refreshes the category page.
+    if (!category) {
+        return (<div>Loading......</div>);
+    }
+
     const src = `${category.image}/800x450`;
     return (
         <div>

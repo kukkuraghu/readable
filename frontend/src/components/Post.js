@@ -9,6 +9,7 @@ import Comments  from './Comments';
 import FormField from './FormField';
 import { upVotePost, downVotePost, deletePost } from '../actions';
 import EditPost  from './EditPost';
+import NotFound from './NotFound';
 
 /**
 **Post component renders the post in detail.
@@ -80,6 +81,9 @@ class Post extends Component {
         console.log('Post render props: ', this.props);
         console.log('Post render state: ', this.state);
         const { modalEditPostOpen } = this.state;
+        if (!this.currentPost) {
+            return (<NotFound/>);
+        }
         return (
             <div>
                 <form>
